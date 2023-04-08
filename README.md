@@ -1,2 +1,2 @@
-# DS
- Example of Datastructure and Algo.
+# DSA
+ 'Example of Datastructure and Algo.
