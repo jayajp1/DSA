@@ -13,7 +13,6 @@
 // Bonus:
 // Time - O(n log n)
 // Space - O(1)
-
 function areThereDuplicates(...args) {
     // Two pointers
     args.sort((a,b) => a > b);

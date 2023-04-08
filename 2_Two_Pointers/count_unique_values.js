@@ -23,7 +23,7 @@
 //--------------------------------------------------------------
 // function countUniqueValues(arr) { 
 //     if (!arr || arr.length) { return 0; }
-
+ 
 //     let count = 1;
 //     let pointer1 = 0;
 //     let pointer2 = 1;

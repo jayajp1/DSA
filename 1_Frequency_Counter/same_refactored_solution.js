@@ -26,7 +26,7 @@ function same(arr1, arr2){
         if(!(key ** 2 in frequencyCounter2)){
             return false
         }
-        // compare value of frequencyCounter1[3**2] => 1 with  frequencyCounter2[3]
+        // Compare value of frequencyCounter1[3**2] => 1 with  frequencyCounter2[3]
         if(frequencyCounter2[key ** 2] !== frequencyCounter1[key]){
             return false
         }

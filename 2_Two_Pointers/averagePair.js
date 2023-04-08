@@ -11,7 +11,7 @@
 // averagePair([1,3,3,5,6,7,10,12,19],8) // true
 // averagePair([-1,0,3,4,5,6], 4.1) // false
 // averagePair([],4) // false
-// JAY
+// JAY L
 function averagePair(arr,avg){
     if (arr.length === 0) return false;
     let i = 0;
