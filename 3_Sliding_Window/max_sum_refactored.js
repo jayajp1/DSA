@@ -7,7 +7,7 @@ function maxSubarraySum(arr, num){
     maxSum += arr[i];
   }
   tempSum = maxSum;
-  // MOST IMPROTANT WE NEED TO STORE LATEST 3 NUMBERS SUM.
+  // MOST IMPORTANT WE NEED TO STORE LATEST 3 NUMBERS SUM.
   // THAT WHY WE CREATED tempSum VARIABLE GLOBALLY AND NOT INSIDE THE FOR LOOP.
   // for ex:[2,6,9,3,1,8,5,6,3] -> i=3
   for (let i = num; i < arr.length; i++) {

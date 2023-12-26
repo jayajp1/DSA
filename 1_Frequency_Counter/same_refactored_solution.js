@@ -22,7 +22,7 @@ function same(arr1, arr2){
     // {'9': 1,'1':1,'4':2,'11':1}
     for(let key in frequencyCounter1){
         // key = 3;
-        // '9' as key prsent in frequencyCounter2 object
+        // '9' as key present in frequencyCounter2 object
         if(!(key ** 2 in frequencyCounter2)){
             return false
         }
