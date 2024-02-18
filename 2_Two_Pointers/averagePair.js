@@ -12,28 +12,28 @@
 // averagePair([-1,0,3,4,5,6], 4.1) // false
 // averagePair([],4) // false
 // JAY L
-function averagePair(arr,avg){
-    if (arr.length === 0) return false;
-    let i = 0;
-    let j = arr.length - 1;
-    while(i<arr.length) {
-       let sumAVG = (arr[i] + arr[j]) / 2;
-       if(sumAVG == avg) return true;
-       else if (sumAVG > avg) j--;
-       else if (sumAVG < avg) i++;
-    }
-    return false;
-   }
+function averagePair(arr, avg) {
+  if (arr.length === 0) return false;
+  let i = 0;
+  let j = arr.length - 1;
+  while (i < arr.length) {
+    let sumAVG = (arr[i] + arr[j]) / 2;
+    if (sumAVG == avg) return true;
+    else if (sumAVG > avg) j--;
+    else if (sumAVG < avg) i++;
+  }
+  return false;
+}
 
 // UDEMY
-function averagePair(arr, num){
-    let start = 0
-    let end = arr.length-1;
-    while(start < end){
-      let avg = (arr[start]+arr[end]) / 2 
-      if(avg === num) return true;
-      else if(avg < num) start++
-      else end--
-    }
-    return false;
+function averagePair(arr, num) {
+  let start = 0;
+  let end = arr.length - 1;
+  while (start < end) {
+    let avg = (arr[start] + arr[end]) / 2;
+    if (avg === num) return true;
+    else if (avg < num) start++;
+    else end--;
   }
+  return false;
+}

@@ -15,23 +15,23 @@
 
 // JAY SOLUTION
 function isSubsequence(str, strMain) {
-    if (str.length > strMain.length) return false;
-    
-    let i = 0;
-    let j = 0;
-    let strTemp = '';
-    while(i < str.length && j < strMain.length) {
-        if(str.charAt(i) === strMain.charAt(j)) {
-            strTemp += strMain.charAt(j);
-            i++;
-        } 
-        j++;
-        if(strTemp === str) {
-            return true;
-        }
+  if (str.length > strMain.length) return false;
+
+  let i = 0;
+  let j = 0;
+  let strTemp = "";
+  while (i < str.length && j < strMain.length) {
+    if (str.charAt(i) === strMain.charAt(j)) {
+      strTemp += strMain.charAt(j);
+      i++;
     }
-    return false;
+    j++;
+    if (strTemp === str) {
+      return true;
+    }
   }
+  return false;
+}
 
 // isSubsequence Solution - Iterative - UDEMY
 function isSubsequence(str1, str2) {
@@ -47,8 +47,8 @@ function isSubsequence(str1, str2) {
 }
 // isSubsequence Solution - Recursive but not O(1) Space
 function isSubsequence(str1, str2) {
-  if(str1.length === 0) return true
-  if(str2.length === 0) return false
-  if(str2[0] === str1[0]) return isSubsequence(str1.slice(1), str2.slice(1))  
-  return isSubsequence(str1, str2.slice(1))
+  if (str1.length === 0) return true;
+  if (str2.length === 0) return false;
+  if (str2[0] === str1[0]) return isSubsequence(str1.slice(1), str2.slice(1));
+  return isSubsequence(str1, str2.slice(1));
 }

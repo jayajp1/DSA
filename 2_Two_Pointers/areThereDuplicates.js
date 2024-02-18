@@ -3,8 +3,8 @@
 // Examples:
 
 // areThereDuplicates(1, 2, 3) // false
-// areThereDuplicates(1, 2, 2) // true 
-// areThereDuplicates('a', 'b', 'c', 'a') // true 
+// areThereDuplicates(1, 2, 2) // true
+// areThereDuplicates('a', 'b', 'c', 'a') // true
 // Restrictions:
 
 // Time - O(n)
@@ -14,22 +14,21 @@
 // Time - O(n log n)
 // Space - O(1)
 function areThereDuplicates(...args) {
-    // Two pointers
-    args.sort((a,b) => a > b);
-    let start = 0;
-    let next = 1;
-    while(next < args.length){
-      if(args[start] === args[next]){
-          return true
-      }
-      start++
-      next++
+  // Two pointers
+  args.sort((a, b) => a > b);
+  let start = 0;
+  let next = 1;
+  while (next < args.length) {
+    if (args[start] === args[next]) {
+      return true;
     }
-    return false
+    start++;
+    next++;
   }
+  return false;
+}
 
-  
-  // Linear
-  function areThereDuplicates() {
-    return new Set(arguments).size !== arguments.length;
-  }
+// Linear
+function areThereDuplicates() {
+  return new Set(arguments).size !== arguments.length;
+}

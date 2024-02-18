@@ -1,10 +1,8 @@
-
 function factorial(num) {
-    if (num === 1) {
-        return 1;
-    }
-    return num * factorial(num - 1);
-    
+  if (num === 1) {
+    return 1;
+  }
+  return num * factorial(num - 1);
 }
 console.log(factorial(5));
 // factorial(3)
@@ -14,4 +12,4 @@ console.log(factorial(5));
 //         3 * 2
 // return 6;
 
-[1,2,3].slice()
+[1, 2, 3].slice();
